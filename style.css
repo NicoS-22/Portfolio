@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #18181B;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1EDFF6;
+    transition: all 0.4s ease;
+}
+
+.btn-grad {
+            background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+}
+
+.btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+}
+
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.btn{
+            background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            border-radius: 10px;
+            display: block;
+            cursor: pointer;
+}
+
+.btn:hover{
+    background-position: right center;
+}
+
+.btn:active{
+    background-image: linear-gradient(to right, #12D8FA 0%, #12D8FA  51%, #12D8FA  100%);
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px rgb(40, 180, 245);
+    z-index: -100;
+    left: 85px;
+    top: 150px;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .image{
+    position: relative;
+}
+
+header .headerImage::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(20px) translateX(105px); 
+    font-size: 40rem;
+    font-weight: 400;
+    line-height: 20rem;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #1FA2FF 25%, #12D8FA  41%,  #49e4ff  71%, #1FA2FF  100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    opacity: 0.8;
+    z-index: -100;
+    
+}
