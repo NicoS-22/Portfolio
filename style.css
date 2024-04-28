@@ -20,6 +20,7 @@ a{
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #18181B;
+    scroll-behavior: smooth;
 }
 
 nav{
@@ -112,6 +113,7 @@ nav{
     max-width: 1200px;
     margin: auto;
     padding: 5rem 2rem;
+    min-height: 100vh;
 }
 
 .blur{
@@ -119,7 +121,7 @@ nav{
     box-shadow: 0 0 1000px 50px rgb(40, 180, 245);
     z-index: -100;
     left: 85px;
-    top: 150px;
+    top: 400px;
 }
 
 header{
@@ -158,7 +160,7 @@ header .headerImage::before{
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateY(20px) translateX(105px); 
+    transform: translateY(260px) translateX(105px); 
     font-size: 40rem;
     font-weight: 400;
     line-height: 20rem;
@@ -169,3 +171,53 @@ header .headerImage::before{
     z-index: -100;
     
 }
+
+section h2{
+    color: #fff;
+    text-align: center;
+    font-size: 5rem;
+    padding: 2rem 4rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    padding: 10rem 10rem;
+    gap: 4rem;
+    min-height: calc(100vh - 192px) ;
+    align-items: center;
+}
+
+.card{
+    background-image: linear-gradient(to bottom, #1FA2FF 0%, #12D8FA  100%);
+    height: fit-content;
+    border-radius: 5% 20% 20% 5%;
+    max-width: 450px;
+    border: 2px solid #fff;
+}
+
+.card:hover{
+    background-image: linear-gradient(to bottom, #12D8FA  0%, #1f5bff 50%, #1FA2FF 100%);
+    transition: all 2s ease;
+}
+
+.card h5{
+    color: #ccc;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.card p{
+    color: #ccc;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.cardImg{
+    border-radius: 5% 20% 20% 5%;
+    width: fit-content;
+}
+
